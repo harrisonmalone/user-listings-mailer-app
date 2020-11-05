@@ -1,24 +1,14 @@
-# README
+# Rails Mailer
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+In this example we looked at Rails Mailers and used SendGrid as the third party service.
 
-Things you may want to cover:
+## Docs Used
 
-* Ruby version
+1. Rails mailers https://guides.rubyonrails.org/action_mailer_basics.html
+2. Sendgrid docs https://sendgrid.com/docs/for-developers/sending-email/rubyonrails
 
-* System dependencies
+## Note
 
-* Configuration
+You need to add a single sender verified email.
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+This can be configured on the Sendgrid dashboard under Settings > Sender Authentication. 
