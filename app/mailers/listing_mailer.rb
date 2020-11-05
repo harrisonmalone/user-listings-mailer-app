@@ -1,6 +1,7 @@
 class ListingMailer < ApplicationMailer
-  def send_listing_new_mail(user)
+  def send_listing_new_mail(user, listing)
     @user = user
-    mail(to: @user.email, subject: 'Thanks for signing up for our amazing app')
+    @listing = listing
+    mail(to: @user.email, subject: 'Thanks for creating a new listing')
   end
 end
