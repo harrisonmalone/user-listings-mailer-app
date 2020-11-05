@@ -1,0 +1,10 @@
+<h1>Listings index</h1>
+
+<% @listings.each do |listing| %>
+  <div class="item">  
+    <p>Name: <%= listing.name.capitalize %> Price: $<%= listing.price %></p>
+    <button>Buy</button>
+  </div>
+<% end %>
+
+<%= link_to "New listing page", new_listing_path %>
